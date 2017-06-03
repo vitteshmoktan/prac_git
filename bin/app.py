@@ -11,6 +11,8 @@ render = web.template.render ('templates/')
 class Index(object):
   def GET (self):
     greeting = "Hello Everyone"
+    greeting += "Me too"
+
     return render.index (greeting = greeting)
 
 if __name__ == "__main__":
